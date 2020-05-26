@@ -1,0 +1,10 @@
+name = "BAFOPS2";
+picture = "";
+description = "BAFOPS2 Mission framework and modifications";
+logo = "";
+logoOver = "";
+tooltip = "BAFOPS2";
+tooltipOwned = "BAFOPS2 Owned";
+overview = "Missions scripts, assets and preconfigured units for BAFOPS2 missions.";
+author = "TikaKino";
+overviewPicture = "";
