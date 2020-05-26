@@ -1,0 +1,5 @@
+Source code for the Arma 3 mod @bafops2.
+
+Each directory under addons needs to be built into a .pbo by AddonBuilder or similar and signed (.biprivatekey not included in this repository for obvious reasons...)
+
+Function files are named "fn_functionName.sqf" and translate to 'bafops2_fnc_functionName'
