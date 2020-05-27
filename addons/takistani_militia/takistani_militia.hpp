@@ -76,6 +76,67 @@ class CfgVehicles {
         };
     };
 
+    class I_Sniper_F;
+    class I_Sniper_F_OCimport_01 : I_Sniper_F { scope = 0; class EventHandlers; };
+    class I_Sniper_F_OCimport_02 : I_Sniper_F_OCimport_01 { class EventHandlers; };
+
+    class rhsgref_nat_uaz;
+    class rhsgref_nat_uaz_OCimport_01 : rhsgref_nat_uaz { scope = 0; class EventHandlers; };
+    class rhsgref_nat_uaz_OCimport_02 : rhsgref_nat_uaz_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class rhsgref_nat_uaz_open;
+    class rhsgref_nat_uaz_open_OCimport_01 : rhsgref_nat_uaz_open { scope = 0; class EventHandlers; class Turrets; };
+    class rhsgref_nat_uaz_open_OCimport_02 : rhsgref_nat_uaz_open_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+        };
+    };
+
+    class rhsgref_nat_uaz_dshkm;
+    class rhsgref_nat_uaz_dshkm_OCimport_01 : rhsgref_nat_uaz_dshkm { scope = 0; class EventHandlers; class Turrets; };
+    class rhsgref_nat_uaz_dshkm_OCimport_02 : rhsgref_nat_uaz_dshkm_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class CargoTurret_01;
+        };
+    };
+
+    class rhsgref_tla_offroad;
+    class rhsgref_tla_offroad_OCimport_01 : rhsgref_tla_offroad { scope = 0; class EventHandlers; class Turrets; };
+    class rhsgref_tla_offroad_OCimport_02 : rhsgref_tla_offroad_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+        };
+    };
+
+    class rhsgref_tla_offroad_armed;
+    class rhsgref_tla_offroad_armed_OCimport_01 : rhsgref_tla_offroad_armed { scope = 0; class EventHandlers; class Turrets; };
+    class rhsgref_tla_offroad_armed_OCimport_02 : rhsgref_tla_offroad_armed_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class M2_Turret;
+        };
+    };
+
+    class rhsgref_nat_2b14;
+    class rhsgref_nat_2b14_OCimport_01 : rhsgref_nat_2b14 { scope = 0; class EventHandlers; class Turrets; };
+    class rhsgref_nat_2b14_OCimport_02 : rhsgref_nat_2b14_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
     class rhsgref_cdf_gaz66o;
     class rhsgref_cdf_gaz66o_OCimport_01 : rhsgref_cdf_gaz66o { scope = 0; class EventHandlers; class Turrets; };
     class rhsgref_cdf_gaz66o_OCimport_02 : rhsgref_cdf_gaz66o_OCimport_01 { 
@@ -152,6 +213,9 @@ class CfgVehicles {
         };
     };
 
+    ////////////////////////////////////////////////////////////////////////
+    //       Men
+    ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_Rifleman_AKM_01 : TBan_Recruit2NH_OCimport_02 {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKM_01.jpg";
@@ -366,7 +430,7 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
 
-        identityTypes[] = {"Nikos","NoGlasses"};
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
 
         uniformClass = "U_Afghan03";
 
@@ -700,7 +764,7 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
 
-        identityTypes[] = {"Nikos","NoGlasses"};
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
 
         uniformClass = "U_Afghan04";
 
@@ -739,6 +803,283 @@ class CfgVehicles {
         side = 2;
         faction = "IND_Takistani_Militia";
     };
+
+
+    class O_TakistaniMilitia_IED_Specialist_M84A_01 : TBan_Recruit6NH_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_M84A_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "IED Specialist (M84A)";
+
+        canDeactivateMines=1;
+        Engineer=1;
+        icon = "iconManEngineer";
+
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan01NH";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"rhs_weap_scorpion","Binocular", Put};
+        respawnWeapons[] = {"rhs_weap_scorpion","Binocular", Put};
+
+        magazines[] = {"rhsgref_20rnd_765x17_vz61","rhsgref_20rnd_765x17_vz61"};
+        respawnMagazines[] = {"rhsgref_20rnd_765x17_vz61","rhsgref_20rnd_765x17_vz61"};
+
+        backpack = "B_Messenger_Coyote_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan01NH",{{"FirstAidKit",1},{"ACE_fieldDressing",4},{"rhsgref_20rnd_765x17_vz61",3,20}}},{},{"B_Messenger_Coyote_F",{{"ACE_Cellphone",1},{"ACE_DeadManSwitch",1},{"IEDLandSmall_Remote_Mag",1,1},{"IEDUrbanSmall_Remote_Mag",2,1},{"rhs_mine_Mk2_tripwire_mag",1,1}}},"","",{"Binocular","","","",{},{},""},{"","","","","",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_IED_Specialist_M84A_01 : O_TakistaniMilitia_IED_Specialist_M84A_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_IED_Specialist_M84A_01 : O_TakistaniMilitia_IED_Specialist_M84A_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
+    class O_TakistaniMilitia_IED_Specialist_Unarmed_01 : TBan_Recruit6NH_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_Unarmed_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "IED Specialist (Unarmed)";
+
+        canDeactivateMines=1;
+        Engineer=1;
+        icon = "iconManEngineer";
+
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan01NH";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {Put, Throw};
+        respawnWeapons[] = {Put, Throw};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        backpack = "B_Messenger_Coyote_F";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"U_Afghan01NH",{{"FirstAidKit",1},{"ACE_fieldDressing",4},{"ACE_Cellphone",2},{"ACE_DeadManSwitch",1}}},{},{"B_Messenger_Coyote_F",{{"IEDUrbanSmall_Remote_Mag",2,1},{"IEDLandSmall_Remote_Mag",1,1},{"rhs_mine_Mk2_tripwire_mag",1,1}}},"","",{},{"","","","","",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_IED_Specialist_Unarmed_01 : O_TakistaniMilitia_IED_Specialist_Unarmed_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_IED_Specialist_Unarmed_01 : O_TakistaniMilitia_IED_Specialist_Unarmed_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
+    ////////////////////////////////////////////////////////////////////////
+    //       Men (Special Forces)
+    ////////////////////////////////////////////////////////////////////////
+
+    class O_TakistaniMilitia_Rifleman_SF_AKM_01 : I_Sniper_F_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_SF_AKM_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (AKM)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "rhsgref_uniform_woodland_olive";
+
+        linkedItems[] = {"V_BandollierB_blk","Afghan_02Hat","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"V_BandollierB_blk","Afghan_02Hat","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {"rhs_weap_akm","Binocular", Throw};
+        respawnWeapons[] = {"rhs_weap_akm","Binocular", Throw};
+
+        magazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
+        respawnMagazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"rhsgref_uniform_woodland_olive",{{"rhs_30Rnd_762x39mm_bakelite",2,30},{"MiniGrenade",2,1}}},{"V_BandollierB_blk",{{"ACE_fieldDressing",6},{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_02Hat","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Rifleman_SF_AKM_01 : O_TakistaniMilitia_Rifleman_SF_AKM_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Rifleman_SF_AKM_01 : O_TakistaniMilitia_Rifleman_SF_AKM_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+    
+
+    class O_TakistaniMilitia_Sniper_SF_Dragunov_01 : O_TakistaniMilitia_Rifleman_SF_AKM_01 {
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Sniper (Dragunov)";
+
+        textSingular = "$STR_A3_nameSound_veh_infantry_sniper_s";
+        textPlural = "$STR_A3_nameSound_veh_infantry_sniper_p";
+        nameSound = "veh_infantry_sniper_s"; 
+
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "rhsgref_uniform_flecktarn";
+
+        linkedItems[] = {"V_BandollierB_blk","Afghan_04Hat","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"V_BandollierB_blk","Afghan_04Hat","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {"rhs_weap_svdp","Binocular", Throw};
+        respawnWeapons[] = {"rhs_weap_svdp","Binocular", Throw};
+
+        magazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1"};
+        respawnMagazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1"};
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_svdp","","","rhs_acc_pso1m21",{"rhs_10Rnd_762x54mmR_7N1",10},{},""},{},{},{"rhsgref_uniform_flecktarn",{{"MiniGrenade",2,1},{"rhs_10Rnd_762x54mmR_7N1",3,10}}},{"V_BandollierB_blk",{{"ACE_fieldDressing",6},{"rhs_10Rnd_762x54mmR_7N14",6,10},{"MiniGrenade",2,1}}},{},"Afghan_04Hat","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Sniper_SF_Dragunov_01 : O_TakistaniMilitia_Sniper_SF_Dragunov_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Sniper_SF_Dragunov_01 : O_TakistaniMilitia_Sniper_SF_Dragunov_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
+    ////////////////////////////////////////////////////////////////////////
+    //       Artillery
+    ////////////////////////////////////////////////////////////////////////
+
+    class O_TakistaniMilitia_2B14_1Podnos_01 : rhsgref_nat_2b14_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_2B14_1Podnos_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "2B14-1 'Podnos'";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_M1_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_2B14_1Podnos_01 : O_TakistaniMilitia_2B14_1Podnos_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_M1_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+    };
+
+    class I_TakistaniMilitia_2B14_1Podnos_01 : O_TakistaniMilitia_2B14_1Podnos_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_M1_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "I_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+    };
+
+
+    ////////////////////////////////////////////////////////////////////////
+    //       Turrets
+    ////////////////////////////////////////////////////////////////////////
 
 
     class O_TakistaniMilitia_ZU_23_2_01 : RHS_ZU23_VDV_OCimport_02 {
@@ -896,6 +1237,249 @@ class CfgVehicles {
         };
     };
 
+    ////////////////////////////////////////////////////////////////////////
+    //       Cars
+    ////////////////////////////////////////////////////////////////////////
+
+    class O_TakistaniMilitia_UAZ_3151_01 : rhsgref_nat_uaz_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UAZ-3151";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_AKMS_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'rhsafrf\addons\rhs_a2port_car\uaz\data\uaz_main_ind_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "standard";
+
+    };
+
+    class B_TakistaniMilitia_UAZ_3151_01 : O_TakistaniMilitia_UAZ_3151_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_AKMS_01";
+    };
+
+    class I_TakistaniMilitia_UAZ_3151_01 : O_TakistaniMilitia_UAZ_3151_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_AKMS_01";
+    };
+
+
+    class O_TakistaniMilitia_UAZ_3151_Open_01 : rhsgref_nat_uaz_open_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_Open_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UAZ-3151 (Open)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_AKM_01";
+
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+            class CargoTurret_05 : CargoTurret_05 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_UAZ_3151_Open_01 : O_TakistaniMilitia_UAZ_3151_Open_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_AKM_01";
+    };
+
+    class I_TakistaniMilitia_UAZ_3151_Open_01 : O_TakistaniMilitia_UAZ_3151_Open_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_AKM_01";
+    };
+
+    class O_TakistaniMilitia_UAZ_3151_DShKM_01 : rhsgref_nat_uaz_dshkm_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_DShKM_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UAZ-3151 (DShKM)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_AKM_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_Mosin_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_UAZ_3151_DShKM_01 : O_TakistaniMilitia_UAZ_3151_DShKM_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_AKM_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_TakistaniMilitia_Rifleman_Mosin_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+    };
+
+    class I_TakistaniMilitia_UAZ_3151_DShKM_01 : O_TakistaniMilitia_UAZ_3151_DShKM_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_AKM_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "I_TakistaniMilitia_Rifleman_Mosin_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+    };
+
+    class O_TakistaniMilitia_Offroad_01 : rhsgref_tla_offroad_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Offroad_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Offroad";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_AKMS_01";
+
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Guerilla_12";
+
+    };
+
+    class B_TakistaniMilitia_Offroad_01 : O_TakistaniMilitia_Offroad_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_AKMS_01";
+    };
+
+    class I_TakistaniMilitia_Offroad_01 : O_TakistaniMilitia_Offroad_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_AKMS_01";
+    };
+
+    class O_TakistaniMilitia_Offroad_HMG_01 : rhsgref_tla_offroad_armed_OCimport_02 {
+        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Offroad_HMG_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Offroad (HMG)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+        crew = "O_TakistaniMilitia_Rifleman_AKMS_01";
+
+        class Turrets : Turrets {
+            class M2_Turret : M2_Turret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Guerilla_12";
+
+    };
+
+    class B_TakistaniMilitia_Offroad_HMG_01 : O_TakistaniMilitia_Offroad_HMG_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+        crew = "B_TakistaniMilitia_Rifleman_AKMS_01";
+
+        class Turrets : Turrets {
+            class M2_Turret : M2_Turret { gunnerType = "B_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+    };
+
+    class I_TakistaniMilitia_Offroad_HMG_01 : O_TakistaniMilitia_Offroad_HMG_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+        crew = "I_TakistaniMilitia_Rifleman_AKMS_01";
+
+        class Turrets : Turrets {
+            class M2_Turret : M2_Turret { gunnerType = "I_TakistaniMilitia_Rifleman_M1_01"; };
+        };
+    };
+
+
+    ////////////////////////////////////////////////////////////////////////
+    //       Trucks
+    ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_Truck_Gaz_01 : rhsgref_cdf_gaz66o_OCimport_02 {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Truck_Gaz_01.jpg";
@@ -1018,6 +1602,10 @@ class CfgVehicles {
         };
     };
 
+
+    ////////////////////////////////////////////////////////////////////////
+    //       APCs
+    ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_BTR60_01 : rhsgref_ins_btr60_OCimport_02 {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_BTR60_01.jpg";
