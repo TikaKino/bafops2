@@ -196,7 +196,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_Rifleman_AKM_01 : TBan_Recruit2NH_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKM_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKM_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -246,7 +246,7 @@ class CfgVehicles {
     
 
     class O_TakistaniMilitia_Rifleman_AKMS_01 : TBan_Recruit4_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKMS_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKMS_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -296,7 +296,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Rifleman_M1_01 : TBan_Recruit2_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_M1_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_M1_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -346,7 +346,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Rifleman_Mosin_01 : TBan_Recruit3_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_Mosin_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_Mosin_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -396,7 +396,7 @@ class CfgVehicles {
     
 
     class O_TakistaniMilitia_Medic_01 : Haji_Matin_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -452,7 +452,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Machinegunner_PKM_01 : TBan_Recruit2_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Machinegunner_PKM_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Machinegunner_PKM_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -510,7 +510,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_AT_Specialist_RPG_01 : TBan_Recruit6NH_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_AT_Specialist_RPG_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_AT_Specialist_RPG_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -568,7 +568,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_AA_Specialist_Stinger_01 : TBan_Recruit5_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_AA_Specialist_Stinger_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_AA_Specialist_Stinger_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -621,7 +621,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_AA_Specialist_Igla_01 : TBan_Recruit5_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_AA_Specialist_Igla_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_AA_Specialist_Igla_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -674,7 +674,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Sharpshooter_Mosin_01 : TBan_Recruit3_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Sharpshooter_Mosin_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Sharpshooter_Mosin_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -729,7 +729,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Sniper_Dragunov_01 : Haji_Matin_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Sniper_Dragunov_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Sniper_Dragunov_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -784,7 +784,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_IED_Specialist_M84A_01 : TBan_Recruit6NH_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_M84A_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_M84A_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -840,7 +840,7 @@ class CfgVehicles {
     };
 
     class O_TakistaniMilitia_IED_Specialist_Unarmed_01 : TBan_Recruit6NH_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_Unarmed_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_IED_Specialist_Unarmed_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -900,7 +900,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_Rifleman_SF_AKM_01 : I_Sniper_F_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Rifleman_SF_AKM_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_SF_AKM_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1007,7 +1007,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_2B14_1Podnos_01 : rhsgref_nat_2b14 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_2B14_1Podnos_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_2B14_1Podnos_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1044,7 +1044,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_ZU_23_2_01 : RHS_ZU23_VDV_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_ZU_23_2_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_ZU_23_2_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1098,7 +1098,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_DSHkM_Mini_01 : rhsgref_ins_DSHKM_Mini_TriPod {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_DSHkM_Mini_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_DSHkM_Mini_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1122,7 +1122,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_DShKM_01 : rhsgref_ins_DSHKM {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_DShKM_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_DShKM_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1149,7 +1149,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_UAZ_3151_01 : rhsgref_nat_uaz_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1188,7 +1188,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_UAZ_3151_Open_01 : rhsgref_nat_uaz_open_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_Open_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_Open_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1234,7 +1234,7 @@ class CfgVehicles {
     };
 
     class O_TakistaniMilitia_UAZ_3151_DShKM_01 : rhsgref_nat_uaz_dshkm_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_DShKM_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_UAZ_3151_DShKM_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1287,7 +1287,7 @@ class CfgVehicles {
     };
 
     class O_TakistaniMilitia_Offroad_01 : rhsgref_tla_offroad_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Offroad_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Offroad_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1333,7 +1333,7 @@ class CfgVehicles {
     };
 
     class O_TakistaniMilitia_Offroad_HMG_01 : rhsgref_tla_offroad_armed_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Offroad_HMG_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Offroad_HMG_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1389,7 +1389,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_Truck_Gaz_01 : rhsgref_cdf_gaz66o_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Truck_Gaz_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Truck_Gaz_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1450,7 +1450,7 @@ class CfgVehicles {
 
 
     class O_TakistaniMilitia_Truck_Ural_01 : rhsgref_cdf_ural_open_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_Truck_Ural_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Truck_Ural_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1515,7 +1515,7 @@ class CfgVehicles {
     ////////////////////////////////////////////////////////////////////////
 
     class O_TakistaniMilitia_BTR60_01 : rhsgref_ins_btr60_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_BTR60_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_BTR60_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
@@ -1596,7 +1596,7 @@ class CfgVehicles {
     };
 
     class O_TakistaniMilitia_BTR70_01 : rhsgref_ins_btr70_OCimport_02 {
-        editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_BTR70_01.jpg";
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_BTR70_01.jpg";
         author = "Landric";
         scope = 2;
         scopeCurator = 2;
