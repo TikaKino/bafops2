@@ -129,13 +129,13 @@ class CfgVehicles {
     };
 
     class rhsgref_nat_2b14;
-    class rhsgref_nat_2b14_OCimport_01 : rhsgref_nat_2b14 { scope = 0; class EventHandlers; class Turrets; };
+    /*class rhsgref_nat_2b14_OCimport_01 : rhsgref_nat_2b14 { scope = 0; class EventHandlers; class Turrets { class MainTurret; }; };
     class rhsgref_nat_2b14_OCimport_02 : rhsgref_nat_2b14_OCimport_01 { 
         class EventHandlers; 
         class Turrets : Turrets {
             class MainTurret;
         };
-    };
+    };*/
 
     class rhsgref_cdf_gaz66o;
     class rhsgref_cdf_gaz66o_OCimport_01 : rhsgref_cdf_gaz66o { scope = 0; class EventHandlers; class Turrets; };
@@ -1028,7 +1028,7 @@ class CfgVehicles {
     //       Artillery
     ////////////////////////////////////////////////////////////////////////
 
-    class O_TakistaniMilitia_2B14_1Podnos_01 : rhsgref_nat_2b14_OCimport_02 {
+    class O_TakistaniMilitia_2B14_1Podnos_01 : rhsgref_nat_2b14 {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_2B14_1Podnos_01.jpg";
         author = "Landric";
         scope = 2;
@@ -1038,7 +1038,7 @@ class CfgVehicles {
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_M1_01";
 
-        class Turrets : Turrets {
+       /* class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
         };
 
@@ -1052,7 +1052,7 @@ class CfgVehicles {
         };
 
         // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_owned = 1;*/
 
     };
 
@@ -1061,9 +1061,9 @@ class CfgVehicles {
         faction = "BLU_Takistani_Militia";
         crew = "B_TakistaniMilitia_Rifleman_M1_01";
 
-        class Turrets : Turrets {
+        /*class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_TakistaniMilitia_Rifleman_M1_01"; };
-        };
+        };*/
     };
 
     class I_TakistaniMilitia_2B14_1Podnos_01 : O_TakistaniMilitia_2B14_1Podnos_01 {
@@ -1071,9 +1071,9 @@ class CfgVehicles {
         faction = "IND_Takistani_Militia";
         crew = "I_TakistaniMilitia_Rifleman_M1_01";
 
-        class Turrets : Turrets {
+        /*class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "I_TakistaniMilitia_Rifleman_M1_01"; };
-        };
+        };*/
     };
 
 
