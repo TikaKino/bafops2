@@ -96,7 +96,7 @@ class CfgPatches {
             "rhsusf_weapons",
             "rhs_weapons",
             "ace_medical",
-            "Taliban_fighters",
+            "Taliban_fighters"
         };
         author = "Landric";
         authors[] = {"Landric"};
