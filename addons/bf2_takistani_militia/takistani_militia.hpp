@@ -129,13 +129,6 @@ class CfgVehicles {
     };
 
     class rhsgref_nat_2b14;
-    /*class rhsgref_nat_2b14_OCimport_01 : rhsgref_nat_2b14 { scope = 0; class EventHandlers; class Turrets { class MainTurret; }; };
-    class rhsgref_nat_2b14_OCimport_02 : rhsgref_nat_2b14_OCimport_01 { 
-        class EventHandlers; 
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };*/
 
     class rhsgref_cdf_gaz66o;
     class rhsgref_cdf_gaz66o_OCimport_01 : rhsgref_cdf_gaz66o { scope = 0; class EventHandlers; class Turrets; };
@@ -162,22 +155,7 @@ class CfgVehicles {
     };
 
     class rhsgref_ins_DSHKM_Mini_TriPod;
-    class rhsgref_ins_DSHKM_Mini_TriPod_OCimport_01 : rhsgref_ins_DSHKM_Mini_TriPod { scope = 0; class EventHandlers; class Turrets; };
-    class rhsgref_ins_DSHKM_Mini_TriPod_OCimport_02 : rhsgref_ins_DSHKM_Mini_TriPod_OCimport_01 { 
-        class EventHandlers; 
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
     class rhsgref_ins_DSHKM;
-    class rhsgref_ins_DSHKM_OCimport_01 : rhsgref_ins_DSHKM { scope = 0; class EventHandlers; class Turrets; };
-    class rhsgref_ins_DSHKM_OCimport_02 : rhsgref_ins_DSHKM_OCimport_01 { 
-        class EventHandlers; 
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
 
     class TBan_Recruit6NH;
     class TBan_Recruit6NH_OCimport_01 : TBan_Recruit6NH { scope = 0; class EventHandlers; };
@@ -1037,23 +1015,6 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_M1_01";
-
-       /* class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
-        };
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;*/
-
     };
 
     class B_TakistaniMilitia_2B14_1Podnos_01 : O_TakistaniMilitia_2B14_1Podnos_01 {
@@ -1136,7 +1097,7 @@ class CfgVehicles {
     };
 
 
-    class O_TakistaniMilitia_DSHkM_Mini_01 : rhsgref_ins_DSHKM_Mini_TriPod_OCimport_02 {
+    class O_TakistaniMilitia_DSHkM_Mini_01 : rhsgref_ins_DSHKM_Mini_TriPod {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_DSHkM_Mini_01.jpg";
         author = "Landric";
         scope = 2;
@@ -1145,49 +1106,22 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_Mosin_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_Mosin_01"; };
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
     };
 
     class B_TakistaniMilitia_DSHkM_Mini_01 : O_TakistaniMilitia_DSHkM_Mini_01 {
         side = 1;
         faction = "BLU_Takistani_Militia";
         crew = "B_TakistaniMilitia_Rifleman_Mosin_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "B_TakistaniMilitia_Rifleman_Mosin_01"; };
-        };
     };
 
     class I_TakistaniMilitia_DSHkM_Mini_01 : O_TakistaniMilitia_DSHkM_Mini_01 {
         side = 2;
         faction = "IND_Takistani_Militia";
         crew = "I_TakistaniMilitia_Rifleman_Mosin_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "I_TakistaniMilitia_Rifleman_Mosin_01"; };
-        };
     };
 
 
-    class O_TakistaniMilitia_DShKM_01 : rhsgref_ins_DSHKM_OCimport_02 {
+    class O_TakistaniMilitia_DShKM_01 : rhsgref_ins_DSHKM {
         editorPreview = "\takistani_militia\data\preview\TakistaniMilitia_DShKM_01.jpg";
         author = "Landric";
         scope = 2;
@@ -1196,45 +1130,18 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_M1_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
     };
 
     class B_TakistaniMilitia_DShKM_01 : O_TakistaniMilitia_DShKM_01 {
         side = 1;
         faction = "BLU_Takistani_Militia";
         crew = "B_TakistaniMilitia_Rifleman_M1_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "B_TakistaniMilitia_Rifleman_M1_01"; };
-        };
     };
 
     class I_TakistaniMilitia_DShKM_01 : O_TakistaniMilitia_DShKM_01 {
         side = 2;
         faction = "IND_Takistani_Militia";
         crew = "I_TakistaniMilitia_Rifleman_M1_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "I_TakistaniMilitia_Rifleman_M1_01"; };
-        };
     };
 
     ////////////////////////////////////////////////////////////////////////
