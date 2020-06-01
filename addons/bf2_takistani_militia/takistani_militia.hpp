@@ -1295,6 +1295,8 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_AKMS_01";
+		editorSubcategory = "rhs_EdSubcat_car";
+		category = "Car";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -1341,6 +1343,8 @@ class CfgVehicles {
         side = 0;
         faction = "OPF_Takistani_Militia";
         crew = "O_TakistaniMilitia_Rifleman_AKMS_01";
+		editorSubcategory = "rhs_EdSubcat_car";
+		category = "Car";
 
         class Turrets : Turrets {
             class M2_Turret : M2_Turret { gunnerType = "O_TakistaniMilitia_Rifleman_M1_01"; };
