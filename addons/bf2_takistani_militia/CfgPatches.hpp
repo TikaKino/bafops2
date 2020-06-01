@@ -96,6 +96,7 @@ class CfgPatches {
             "rhsusf_weapons",
             "rhs_weapons",
             "ace_medical",
+			"rhsgref_c_vehicles_ret",
             "Taliban_fighters"
         };
         author = "Landric";
