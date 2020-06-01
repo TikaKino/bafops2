@@ -101,5 +101,8 @@ class CfgPatches {
         };
         author = "Landric";
         authors[] = {"Landric"};
+		version=1.1.0;
+		versionStr="1.1.0.0";
+		versionAr[]={1,1,0,0};
     };
 };

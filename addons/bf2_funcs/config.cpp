@@ -18,9 +18,9 @@ class CfgPatches {
 		magazines[] = {};
 		ammo[] = {};
 		requiredVersion = 1.98; 
-		version=1.0.0;
-		versionStr="1.0.0.0";
-		versionAr[]={1,0,0,0};
+		version=1.1.0;
+		versionStr="1.1.0.0";
+		versionAr[]={1,1,0,0};
 	};
 };
 class CfgFunctions {
