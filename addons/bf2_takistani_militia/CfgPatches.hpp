@@ -97,8 +97,6 @@ class CfgPatches {
             "rhs_weapons",
             "ace_medical",
             "Taliban_fighters",
-            "TIKA_BF2_Taliban",
-            "TIKA_BF2_Armciv"
         };
         author = "Landric";
         authors[] = {"Landric"};
