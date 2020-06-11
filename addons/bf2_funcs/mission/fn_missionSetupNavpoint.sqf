@@ -1,16 +1,15 @@
-_active = missionNamespace getVariable ["bafops2_scripts_navpoint_enable",true];
 
-if(hasInterface && _active) then { //Only trigger for players
-	[_active] spawn {
+if(hasInterface) then { //Only trigger for players
+	[] spawn {
 		waitUntil {sleep 0.1; (time > 0) && (!isNull player) && (alive player)};
-		player setVariable ["minimapWaypointLoc",false];
+		player setVariable ["bafops2_scripts_navpoint_marker",false];
 		
 		//Add an event handler for onSingleMapClick - we care about _shift, _alt and _pos
 		//Remember to return false to allow other click handlers to happen!
 		["mapclickWaypointEvent", "onMapSingleClick", {
 			
 			if(_shift && !_alt) then { //Only care if we have shift-clicked
-				player setVariable ["minimapWaypointLoc",_pos]; //Set the location of the click to the player
+				player setVariable ["bafops2_scripts_navpoint_marker",_pos]; //Set the location of the click to the player
 			};
 			
 			//Return in sqf is the last line executed in a code block, because reasons.
@@ -20,9 +19,10 @@ if(hasInterface && _active) then { //Only trigger for players
 		//Add a mission event handler for Draw3D to draw the icon
 		_id = addMissionEventHandler ["Draw3D",{
 			
-			_wploc = player getVariable "minimapWaypointLoc";
-			//Only draw if we have a location to draw to
-			if(!(_wploc isEqualTo false)) then {
+			_active = player getVariable ["bafops2_scripts_navpoint_enable",false];
+			_wploc = player getVariable ["bafops2_scripts_navpoint_marker",false];
+			//Only draw if we have a location to draw to and are active
+			if(!(_wploc isEqualTo false) && !(_active isEqualTo false)) then {
 				//Get a useful position from the click position (i.e. don't go under the waves; drawIcon3D expects PositionAGL)
 				_iconpos = [_wploc select 0,_wploc select 1,0.75];
 				
