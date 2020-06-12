@@ -6,7 +6,7 @@ if(hasInterface) then { //Only trigger for players
 		
 		//Add an event handler for onSingleMapClick - we care about _shift, _alt and _pos
 		//Remember to return false to allow other click handlers to happen!
-		["mapclickWaypointEvent", "onMapSingleClick", {
+		["bafops2_navpoint_click", "onMapSingleClick", {
 			
 			if(_shift && !_alt) then { //Only care if we have shift-clicked
 				player setVariable ["bafops2_scripts_navpoint_marker",_pos]; //Set the location of the click to the player
