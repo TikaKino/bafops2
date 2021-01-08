@@ -17,10 +17,10 @@ class CfgPatches {
 		requiredAddons[] = {};
 		magazines[] = {};
 		ammo[] = {};
-		requiredVersion = 1.98; 
-		version=1.1.2;
-		versionStr="1.1.2.0";
-		versionAr[]={1,1,2,0};
+		requiredVersion = 2.00; 
+		version=1.2.0;
+		versionStr="1.2.0.0";
+		versionAr[]={1,2,0,0};
 	};
 };
 class CfgFunctions {

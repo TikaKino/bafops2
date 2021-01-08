@@ -17,4 +17,6 @@ class sar {
 	class sarTerminalScreenSetterModule {};
 	class sarTerminalMarkerSet {};
 	class sarTerminalMarkerSetterModule {};
+	
+	class sarSafeChopper {};
 };
