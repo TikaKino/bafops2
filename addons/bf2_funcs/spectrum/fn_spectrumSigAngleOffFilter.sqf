@@ -11,7 +11,7 @@ _intensity = _signalstrength;
 _scalemin = missionNamespace getVariable ["#EM_SMin", -60];
 _anglerange = _minStrengthAngle - _maxStrengthAngle;
 
-_direction = player getRelDir _object;
+_direction = player getRelDir _emitter;
 if(_direction > 180) then { _direction = _direction - 360; };
 _absdir = abs _direction;
 
