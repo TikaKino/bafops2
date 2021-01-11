@@ -7,4 +7,5 @@ class zeus {
 	class spectrumSigInverseSquare {};
 	class spectrumSigAliveFilter {};
 	class spectrumSigAngleOffFilter {};
+	class spectrumSigTFARTerrain {};
 };

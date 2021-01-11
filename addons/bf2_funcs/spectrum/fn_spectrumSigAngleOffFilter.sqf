@@ -1,11 +1,10 @@
-params ["_frequency","_signalstrength","_args"];
+params ["_frequency","_signalstrength","_emitter","_receiver","_args"];
 /*
 	Extra parameters:
 	_maxStrengthAngle	Angle below which signal will be at max strength
 	_minStrengthAngle	Angle above which signal will be at min strength
-	_emitter			Emitting object
 */
-_args params ["_maxStrengthAngle","_minStrengthAngle","_emitter"];
+_args params ["_maxStrengthAngle","_minStrengthAngle"];
 
 _intensity = _signalstrength;
 _scalemin = missionNamespace getVariable ["#EM_SMin", -60];

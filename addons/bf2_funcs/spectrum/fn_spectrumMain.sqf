@@ -55,7 +55,7 @@
 			_emitters = missionNamespace getVariable ["bafops2_spectrum_emitters",[]];
 			_strengths = [];
 			{
-				//expected format: [frequency,intital strength,[
+				//expected format: [frequency,intital strength,emitting object, receiving object,[
 				//	[{filter 1 code},[extra arguments to filter 1]],
 				//	[{filter 2 code},[extra arguments to filter 2]],
 				//	...
@@ -63,9 +63,11 @@
 				//Each filter receives as arguments: [
 				//	_frequency,
 				//	_strength, //output from previous filter, or intital strength for first filter
+				//	_emitter,
+				//	_receiver,
 				//	[extra arguments]
 				//]
-				_x params ["_freq","_strength","_filters"];
+				_x params ["_freq","_strength","_emitter","_receiver","_filters"];
 				
 				if(_freq >= _fmin && _freq <= _fmax) then {
 					
@@ -74,7 +76,7 @@
 						_x params ["_fcode","_fargs"];
 						
 						if(!(_signalstrength isEqualTo false)) then {
-							_signalstrength = [_freq,_signalstrength,_fargs] call _fcode;
+							_signalstrength = [_freq,_signalstrength,_emitter,_receiver,_fargs] call _fcode;
 						};
 						
 					} forEach _filters;

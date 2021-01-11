@@ -1,9 +1,8 @@
-params ["_frequency","_signalstrength","_args"];
+params ["_frequency","_signalstrength","_emitter","_receiver","_args"];
 /*
 	Extra parameters:
-	_emitter			Emitting object
+	none
 */
-_args params ["_emitter"];
 
 if (alive _emitter) then {
 	_signalstrength
