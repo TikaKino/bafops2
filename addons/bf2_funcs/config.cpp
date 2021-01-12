@@ -17,10 +17,12 @@ class CfgPatches {
 		requiredAddons[] = {};
 		magazines[] = {};
 		ammo[] = {};
+		author = "Mikael";
+        authors[] = {"Mikael"};
 		requiredVersion = 2.00; 
-		version=1.2.0;
+		version=1.2.1;
 		versionStr="1.2.0.0";
-		versionAr[]={1,2,0,0};
+		versionAr[]={1,2,1,0};
 	};
 };
 class CfgFunctions {

@@ -46,6 +46,8 @@ class CfgPatches {
 		};
 		magazines[] = {};
 		ammo[] = {};
+		author = "Mikael";
+        authors[] = {"Mikael"};
 		requiredVersion = 1.98; 
 		version=1.1.0;
 		versionStr="1.1.0.0";
