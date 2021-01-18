@@ -30,8 +30,8 @@ class CfgFunctions {
 		#include "mission\cfgFunctions.hpp"
 		#include "intel\cfgFunctions.hpp"
 		#include "sar\cfgFunctions.hpp"
-		#include "spectrum\cfgFunctions.hpp"
 		#include "zeus\cfgFunctions.hpp"
+		#include "spectrum\cfgFunctions.hpp"
 	};
 };
 class CfgVehicles{

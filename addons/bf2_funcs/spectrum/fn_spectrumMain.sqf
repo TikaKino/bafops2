@@ -6,9 +6,9 @@
 	missionNamespace setVariable ["#EM_SMax", -20];
 	
 	while {true} do {
-		waitUntil {alive ACE_player};
+		waitUntil {alive ACE_player}; sleep 0.05;
 		
-		if (currentWeapon player == "hgun_esd_01_F") then {		
+		if (currentWeapon player == "hgun_esd_01_F") then {	
 			_attachment = handgunItems player;
 			_attachment = _attachment select 0;
 			

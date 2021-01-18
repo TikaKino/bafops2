@@ -1,4 +1,4 @@
-class zeus {
+class spectrum {
 	file = "bf2_funcs\spectrum";
 	
 	class spectrumMain { postInit = 1; };
