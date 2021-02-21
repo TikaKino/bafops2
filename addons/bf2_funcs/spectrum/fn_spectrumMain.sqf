@@ -37,6 +37,12 @@
 						_max = 433.5;
 						_swidth = 1.0;
 					};
+					case "TIKA_BF2_muzzle_antenna_radio": {
+						//Custom "radio band" antenna
+						_min = 100.0;
+						_max = 300.0;
+						_swith = 3.0;
+					};
 				};
 				
 				missionNamespace setVariable ["#EM_FMin", _min];

@@ -58,3 +58,6 @@ class CfgVehicles{
 	#include "sar\cfgModules.hpp"
 	#include "mission\cfgModules.hpp"
 };
+class CfgWeapons{
+	#include "spectrum\cfgWeapons.hpp"
+};
