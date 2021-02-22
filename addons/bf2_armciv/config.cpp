@@ -33,6 +33,12 @@ class CfgPatches {
 			"TIKA_BF2_Armciv_L1A1_O",
 			"TIKA_BF2_Armciv_L1A1_I",
 			"TIKA_BF2_Armciv_L1A1_B",
+			"TIKA_BF2_Armciv_AKM_O",
+			"TIKA_BF2_Armciv_AKM_I",
+			"TIKA_BF2_Armciv_AKM_B",
+			"TIKA_BF2_Armciv_AKMS_O",
+			"TIKA_BF2_Armciv_AKMS_I",
+			"TIKA_BF2_Armciv_AKMS_B",
 			"TIKA_BF2_GEN_Soldier_I",
 			"TIKA_BF2_GEN_Commander_I"
 		};
