@@ -195,7 +195,7 @@ class TIKA_BF2_Armciv_L1A1_B: TIKA_BF2_Armciv_L1A1_O {
 
 class TIKA_BF2_Armciv_AKM_O: TIKA_BF2_Armciv_BASE {
 	displayName = "Armed Civilian (AKM Rifle)";
-	uniformClass = "U_BG_Leader";
+	uniformClass = "U_OG_Guerilla2_3";
 	weapons[] = {rhs_weap_akm, Throw, Put};
 	respawnWeapons[] = {rhs_weap_akm, Throw, Put};
 	magazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
@@ -206,14 +206,16 @@ class TIKA_BF2_Armciv_AKM_O: TIKA_BF2_Armciv_BASE {
 };
 class TIKA_BF2_Armciv_AKM_I: TIKA_BF2_Armciv_AKM_O {
 	side = 2;
+	uniformClass = "U_IG_Guerilla2_3";
 };
 class TIKA_BF2_Armciv_AKM_B: TIKA_BF2_Armciv_AKM_O {
 	side = 1;
+	uniformClass = "U_BG_Guerilla2_3";
 };
 
 class TIKA_BF2_Armciv_AKMS_O: TIKA_BF2_Armciv_BASE {
 	displayName = "Armed Civilian (AKMS Rifle)";
-	uniformClass = "U_BG_Guerrilla2_2";
+	uniformClass = "U_OG_Guerilla2_2";
 	weapons[] = {rhs_weap_akms, Throw, Put};
 	respawnWeapons[] = {rhs_weap_akms, Throw, Put};
 	magazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
@@ -224,7 +226,9 @@ class TIKA_BF2_Armciv_AKMS_O: TIKA_BF2_Armciv_BASE {
 };
 class TIKA_BF2_Armciv_AKMS_I: TIKA_BF2_Armciv_AKMS_O {
 	side = 2;
+	uniformClass = "U_IG_Guerilla2_2";
 };
 class TIKA_BF2_Armciv_AKMS_B: TIKA_BF2_Armciv_AKMS_O {
 	side = 1;
+	uniformClass = "U_BG_Guerilla2_2";
 };
