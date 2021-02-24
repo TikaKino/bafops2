@@ -1,5 +1,9 @@
 class CAManBase;
+class Civilian;
 class I_G_Soldier_F;
+class Civilian_F: Civilian {
+	modelSides[] = {3,2,1,0};
+};
 class SoldierGB: CAManBase {
 	modelSides[] = {3,2,1,0};
 };

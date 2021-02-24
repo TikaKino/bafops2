@@ -200,8 +200,8 @@ class TIKA_BF2_Armciv_AKM_O: TIKA_BF2_Armciv_BASE {
 	respawnWeapons[] = {rhs_weap_akm, Throw, Put};
 	magazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
 	respawnMagazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
-	linkedItems[] = {H_Cap_red};
-	respawnLinkedItems[] = {H_Cap_red};
+	linkedItems[] = {H_Hat_tan};
+	respawnLinkedItems[] = {H_Hat_tan};
 	INSCOPE;
 };
 class TIKA_BF2_Armciv_AKM_I: TIKA_BF2_Armciv_AKM_O {
@@ -220,8 +220,8 @@ class TIKA_BF2_Armciv_AKMS_O: TIKA_BF2_Armciv_BASE {
 	respawnWeapons[] = {rhs_weap_akms, Throw, Put};
 	magazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
 	respawnMagazines[] = {rhs_30Rnd_762x39mm_bakelite,rhs_30Rnd_762x39mm_bakelite};
-	linkedItems[] = {H_Cap_red};
-	respawnLinkedItems[] = {H_Cap_red};
+	linkedItems[] = {H_Bandanna_surfer_blk};
+	respawnLinkedItems[] = {H_Bandanna_surfer_blk};
 	INSCOPE;
 };
 class TIKA_BF2_Armciv_AKMS_I: TIKA_BF2_Armciv_AKMS_O {
@@ -231,4 +231,36 @@ class TIKA_BF2_Armciv_AKMS_I: TIKA_BF2_Armciv_AKMS_O {
 class TIKA_BF2_Armciv_AKMS_B: TIKA_BF2_Armciv_AKMS_O {
 	side = 1;
 	uniformClass = "U_BG_Guerilla2_2";
+};
+
+class TIKA_BF2_Bodyguard_PDW_O: TIKA_BF2_Armciv_BASE {
+	displayName = "Bodyguard (PDW)";
+	uniformClass = "U_C_FormalSuit_01_gray_F";
+	weapons[] = {hgun_PDW2000_F, Throw, Put};
+	respawnWeapons[] = {hgun_PDW2000_F, Throw, Put};
+	magazines[] = {30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag};
+	respawnMagazines[] = {30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag};
+	INSCOPE;
+};
+class TIKA_BF2_Bodyguard_PDW_I: TIKA_BF2_Bodyguard_PDW_O {
+	side = 2;
+};
+class TIKA_BF2_Bodyguard_PDW_B: TIKA_BF2_Bodyguard_PDW_O {
+	side = 1;
+};
+
+class TIKA_BF2_Bodyguard_P07_O: TIKA_BF2_Armciv_BASE {
+	displayName = "Bodyguard (P07 Pistol)";
+	uniformClass = "U_C_FormalSuit_01_gray_F";
+	weapons[] = {hgun_P07_blk_F, Throw, Put};
+	respawnWeapons[] = {hgun_P07_blk_F, Throw, Put};
+	magazines[] = {16Rnd_9x21_Mag,16Rnd_9x21_Mag,16Rnd_9x21_Mag};
+	respawnMagazines[] = {16Rnd_9x21_Mag,16Rnd_9x21_Mag,16Rnd_9x21_Mag};
+	INSCOPE;
+};
+class TIKA_BF2_Bodyguard_P07_I: TIKA_BF2_Bodyguard_P07_O {
+	side = 2;
+};
+class TIKA_BF2_Bodyguard_P07_B: TIKA_BF2_Bodyguard_P07_O {
+	side = 1;
 };
