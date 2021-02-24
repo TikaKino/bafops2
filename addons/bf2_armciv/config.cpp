@@ -39,6 +39,12 @@ class CfgPatches {
 			"TIKA_BF2_Armciv_AKMS_O",
 			"TIKA_BF2_Armciv_AKMS_I",
 			"TIKA_BF2_Armciv_AKMS_B",
+			"TIKA_BF2_Bodyguard_PDW_O",
+			"TIKA_BF2_Bodyguard_PDW_I",
+			"TIKA_BF2_Bodyguard_PDW_B",
+			"TIKA_BF2_Bodyguard_P07_O",
+			"TIKA_BF2_Bodyguard_P07_I",
+			"TIKA_BF2_Bodyguard_P07_B",
 			"TIKA_BF2_GEN_Soldier_I",
 			"TIKA_BF2_GEN_Commander_I"
 		};
@@ -54,10 +60,10 @@ class CfgPatches {
 		ammo[] = {};
 		author = "Mikael";
         authors[] = {"Mikael"};
-		requiredVersion = 1.98; 
-		version=1.1.0;
-		versionStr="1.1.0.0";
-		versionAr[]={1,1,0,0};
+		requiredVersion = 2.02;
+		version=1.2.3;
+		versionStr="1.2.3.0";
+		versionAr[]={1,2,3,0};
 	};
 };
 class CfgVehicleClasses {
