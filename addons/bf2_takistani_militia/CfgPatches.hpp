@@ -5,6 +5,10 @@ class CfgPatches {
             "O_TakistaniMilitia_Rifleman_AKMS_01",
             "O_TakistaniMilitia_Rifleman_M1_01",
             "O_TakistaniMilitia_Rifleman_Mosin_01",
+			"O_TakistaniMilitia_Rifleman_M70_01",
+			"O_TakistaniMilitia_Rifleman_SAVZ58_01",
+			"O_TakistaniMilitia_SMG_M3_01",
+			"O_TakistaniMilitia_SMG_M84_01",
             "O_TakistaniMilitia_Medic_01",
             "O_TakistaniMilitia_Machinegunner_PKM_01",
             "O_TakistaniMilitia_AT_Specialist_RPG_01",
@@ -34,6 +38,10 @@ class CfgPatches {
             "B_TakistaniMilitia_Rifleman_AKMS_01",
             "B_TakistaniMilitia_Rifleman_M1_01",
             "B_TakistaniMilitia_Rifleman_Mosin_01",
+			"B_TakistaniMilitia_Rifleman_M70_01",
+			"B_TakistaniMilitia_Rifleman_SAVZ58_01",
+			"B_TakistaniMilitia_SMG_M3_01",
+			"B_TakistaniMilitia_SMG_M84_01",
             "B_TakistaniMilitia_Medic_01",
             "B_TakistaniMilitia_Machinegunner_PKM_01",
             "B_TakistaniMilitia_AT_Specialist_RPG_01",
@@ -63,6 +71,10 @@ class CfgPatches {
             "I_TakistaniMilitia_Rifleman_AKMS_01",
             "I_TakistaniMilitia_Rifleman_M1_01",
             "I_TakistaniMilitia_Rifleman_Mosin_01",
+			"I_TakistaniMilitia_Rifleman_M70_01",
+			"I_TakistaniMilitia_Rifleman_SAVZ58_01",
+			"I_TakistaniMilitia_SMG_M3_01",
+			"I_TakistaniMilitia_SMG_M84_01",
             "I_TakistaniMilitia_Medic_01",
             "I_TakistaniMilitia_Machinegunner_PKM_01",
             "I_TakistaniMilitia_AT_Specialist_RPG_01",
@@ -100,9 +112,9 @@ class CfgPatches {
             "Taliban_fighters"
         };
         author = "Landric";
-        authors[] = {"Landric"};
-		version=1.1.0;
-		versionStr="1.1.0.0";
-		versionAr[]={1,1,0,0};
+        authors[] = {"Landric","TikaKino"};
+		version=1.3.0;
+		versionStr="1.3.0.0";
+		versionAr[]={1,3,0,0};
     };
 };

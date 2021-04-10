@@ -217,14 +217,21 @@ class CfgVehicles {
         magazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
         respawnMagazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",2},{"rhs_30Rnd_762x39mm_bakelite",1,30}}},{"V_BandollierB_oli",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}};
+		ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_02Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_akm","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_05Hat","",{},{"","","","","",""}},
+		};
 
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -267,14 +274,21 @@ class CfgVehicles {
         magazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
         respawnMagazines[] = {"rhs_30Rnd_762x39mm_bakelite","rhs_30Rnd_762x39mm_bakelite"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan06NH",{{"rhs_30Rnd_762x39mm_bakelite",1,30}}},{"V_TacChestrig_grn_F",{{"ACE_fieldDressing",2},{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}};
+		ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_02Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_akms","rhs_acc_dtkakm","","",{"rhs_30Rnd_762x39mm_bakelite",30},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_bakelite",4,30}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+		};
 
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -317,14 +331,21 @@ class CfgVehicles {
         magazines[] = {"rhsgref_8Rnd_762x63_M2B_M1rifle","rhsgref_8Rnd_762x63_M2B_M1rifle"};
         respawnMagazines[] = {"rhsgref_8Rnd_762x63_M2B_M1rifle","rhsgref_8Rnd_762x63_M2B_M1rifle"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4},{"rhsgref_8Rnd_762x63_M2B_M1rifle",4,8}}},{"V_BandollierB_oli",{}},{},"","",{},{"","","","","",""}};
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m1garand_sa43","","","",{"rhsgref_8Rnd_762x63_M2B_M1rifle",8},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_8Rnd_762x63_M2B_M1rifle",8,8}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+		};
 
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -344,6 +365,116 @@ class CfgVehicles {
         faction = "IND_Takistani_Militia";
     };
 
+
+    class O_TakistaniMilitia_Rifleman_M70_01 : TBan_Recruit2_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKM_01.jpg";
+        author = "Landric / TikaKino";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (M70)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan04";
+
+        linkedItems[] = {"V_BandollierB_oli"};
+        respawnlinkedItems[] = {"V_BandollierB_oli"};
+
+        weapons[] = {"rhs_weap_m70b3n"};
+        respawnWeapons[] = {"rhs_weap_m70b3n"};
+
+        magazines[] = {"rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67"};
+        respawnMagazines[] = {"rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67"};
+
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhssaf_30Rnd_762x39mm_M67",5,30}}},{},"Afghan_02Hat","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Rifleman_M70_01 : O_TakistaniMilitia_Rifleman_M70_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Rifleman_M70_01 : O_TakistaniMilitia_Rifleman_M70_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
+    class O_TakistaniMilitia_Rifleman_SAVZ58_01 : TBan_Recruit2_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_AKM_01.jpg";
+        author = "Landric / TikaKino";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (Sa vz. 58)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan05";
+
+        linkedItems[] = {"V_BandollierB_oli"};
+        respawnlinkedItems[] = {"V_BandollierB_oli"};
+
+        weapons[] = {"rhs_weap_savz58v"};
+        respawnWeapons[] = {"rhs_weap_savz58v"};
+
+        magazines[] = {"rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58"};
+        respawnMagazines[] = {"rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58","rhs_30Rnd_762x39mm_Savz58"};
+
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"Afghan_06Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_savz58v","","","",{"rhs_30Rnd_762x39mm_Savz58",30},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhs_30Rnd_762x39mm_Savz58",5,30}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Rifleman_SAVZ58_01 : O_TakistaniMilitia_Rifleman_SAVZ58_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Rifleman_SAVZ58_01 : O_TakistaniMilitia_Rifleman_SAVZ58_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
 
     class O_TakistaniMilitia_Rifleman_Mosin_01 : TBan_Recruit3_OCimport_02 {
         editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Rifleman_Mosin_01.jpg";
@@ -367,14 +498,21 @@ class CfgVehicles {
         magazines[] = {"rhsgref_5Rnd_762x54_m38","rhsgref_5Rnd_762x54_m38"};
         respawnMagazines[] = {"rhsgref_5Rnd_762x54_m38","rhsgref_5Rnd_762x54_m38"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan03",{{"ACE_fieldDressing",4},{"rhsgref_5Rnd_762x54_m38",9,5}}},{},{},"","",{},{"","","","","",""}};
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m38","","","",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_5Rnd_762x54_m38",8,5}}},{},"Afghan_06Hat","",{},{"","","","","",""}},
+		};
 
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -393,7 +531,116 @@ class CfgVehicles {
         side = 2;
         faction = "IND_Takistani_Militia";
     };
-    
+   
+	class O_TakistaniMilitia_SMG_M3_01 : TBan_Recruit3_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
+        author = "TikaKino";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "SMG (M3)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan03";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"rhs_weap_m3a1"};
+        respawnWeapons[] = {"rhs_weap_m3a1"};
+
+        magazines[] = {"rhsgref_30Rnd_1143x23_M1911B_SMG","rhsgref_30Rnd_1143x23_M1911B_SMG"};
+        respawnMagazines[] = {"rhsgref_30Rnd_1143x23_M1911B_SMG","rhsgref_30Rnd_1143x23_M1911B_SMG"};
+
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"Afghan_02Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_m3a1","","","",{"rhsgref_30Rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_30Rnd_1143x23_M1911B_SMG",5,30}}},{},"Afghan_05Hat","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_SMG_M3_01 : O_TakistaniMilitia_SMG_M3_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_SMG_M3_01 : O_TakistaniMilitia_SMG_M3_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
+	class O_TakistaniMilitia_SMG_M84_01 : TBan_Recruit3_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
+        author = "TikaKino";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "SMG (M84A)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan01NH";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"rhs_weap_scorpion"};
+        respawnWeapons[] = {"rhs_weap_scorpion"};
+
+        magazines[] = {"rhsgref_20rnd_765x17_vz61","rhsgref_20rnd_765x17_vz61"};
+        respawnMagazines[] = {"rhsgref_20rnd_765x17_vz61","rhsgref_20rnd_765x17_vz61"};
+
+        ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"Afghan_02Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"Afghan_06Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",4}}},{"V_Bandollier_oli",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",4}}},{"V_Bandollier_rgr",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"","",{},{"","","","","",""}},
+			{{"rhs_weap_scorpion","","","",{"rhsgref_20rnd_765x17_vz61",20},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chicom",{{"rhsgref_20rnd_765x17_vz61",6,20}}},{},"Afghan_01Hat","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_SMG_M84_01 : O_TakistaniMilitia_SMG_M84_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_SMG_M84_01 : O_TakistaniMilitia_SMG_M84_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
 
     class O_TakistaniMilitia_Medic_01 : Haji_Matin_OCimport_02 {
         editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
@@ -423,7 +670,7 @@ class CfgVehicles {
 
         backpack = "rhs_medic_bag";
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m3a1","","","",{"rhsgref_30rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan03",{{"FirstAidKit",1},{"rhsgref_30rnd_1143x23_M1911B_SMG",1,30}}},{},{"rhs_medic_bag",{{"ACE_bloodIV_500",2},{"ACE_fieldDressing",24},{"ACE_tourniquet",4},{"ACE_splint",2},{"rhsgref_30rnd_1143x23_M1911B_SMG",3,30}}},"","",{},{"","","","","",""}};
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m3a1","","","",{"rhsgref_30rnd_1143x23_M1911B_SMG",30},{},""},{},{},{"U_Afghan03",{{"rhsgref_30rnd_1143x23_M1911B_SMG",1,30}}},{},{"rhs_medic_bag",{{"ACE_bloodIV_500",2},{"ACE_fieldDressing",24},{"ACE_tourniquet",4},{"ACE_splint",2},{"rhsgref_30rnd_1143x23_M1911B_SMG",3,30}}},"","",{},{"","","","","",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -481,14 +728,20 @@ class CfgVehicles {
 
         backpack = "rhs_sidor";
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan02",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"","",{},{"","","","","",""}};
-
+		ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan02NH",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"Afghan_04Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan04",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"","",{},{"","","","","",""}},
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan05",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"","",{},{"","","","","",""}},
+			{{"rhs_weap_pkm","","","",{"rhs_100Rnd_762x54mmR",100},{},""},{},{},{"U_Afghan06NH",{{"ACE_fieldDressing",2}}},{},{"rhs_sidor",{{"rhs_100Rnd_762x54mmR_green",2,100}}},"Afghan_02Hat","",{},{"","","","","",""}},
+		};
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
