@@ -642,6 +642,60 @@ class CfgVehicles {
         faction = "IND_Takistani_Militia";
     };
 
+	class O_TakistaniMilitia_SMG_Sten_01 : TBan_Recruit3_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
+        author = "TikaKino";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "SMG (Sterling)";
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "U_Afghan01NH";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"UK3CB_Sten"};
+        respawnWeapons[] = {"UK3CB_Sten"};
+
+        magazines[] = {"UK3CB_Sten_34Rnd_Magazine","UK3CB_Sten_34Rnd_Magazine"};
+        respawnMagazines[] = {"UK3CB_Sten_34Rnd_Magazine","UK3CB_Sten_34Rnd_Magazine"};
+
+        ALiVE_orbatCreator_loadout[] = {
+			{{"UK3CB_Sten","","","",{"UK3CB_Sten_34Rnd_Magazine",34},{},""},{},{},{"U_Afghan01NH",{{"ACE_fieldDressing",4}}},{"rhsgref_chestrig",{{"UK3CB_Sten_34Rnd_Magazine",6,34}}},{},"UK3CB_TKM_O_H_Turban_01_1","",{},{"","","","","",""}},
+			{{"UK3CB_Sten","","","",{"UK3CB_Sten_34Rnd_Magazine",34},{},""},{},{},{"UK3CB_TKM_I_U_04_B",{{"ACE_fieldDressing",4},{"UK3CB_Sten_34Rnd_Magazine",6,34}}},{},{},"UK3CB_TKM_O_H_Turban_01_1","",{},{"","","","","",""}},
+			{{"UK3CB_Sten","","","",{"UK3CB_Sten_34Rnd_Magazine",34},{},""},{},{},{"UK3CB_TKM_I_U_05",{{"ACE_fieldDressing",4},{"UK3CB_Sten_34Rnd_Magazine",6,34}}},{},{},"UK3CB_TKM_O_H_Turban_04_1","",{},{"","","","","",""}},
+			{{"UK3CB_Sten","","","",{"UK3CB_Sten_34Rnd_Magazine",34},{},""},{},{},{"UK3CB_TKM_I_U_03",{{"ACE_fieldDressing",4},{"UK3CB_Sten_34Rnd_Magazine",6,34}}},{},{},"UK3CB_TKM_O_H_Turban_02_1","",{},{"","","","","",""}},
+			{{"UK3CB_Sten","","","",{"UK3CB_Sten_34Rnd_Magazine",34},{},""},{},{},{"UK3CB_TKM_B_U_05_B",{{"ACE_fieldDressing",4},{"UK3CB_Sten_34Rnd_Magazine",6,34}}},{},{},"UK3CB_ADE_O_H_Turban_01_2","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_SMG_Sten_01 : O_TakistaniMilitia_SMG_Sten_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_SMG_Sten_01 : O_TakistaniMilitia_SMG_Sten_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
+
     class O_TakistaniMilitia_Medic_01 : Haji_Matin_OCimport_02 {
         editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Medic_01.jpg";
         author = "Landric";
@@ -697,6 +751,65 @@ class CfgVehicles {
         faction = "IND_Takistani_Militia";
     };
 
+
+	class O_TakistaniMilitia_Machinegunner_RPK_01 : TBan_Recruit2_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Machinegunner_PKM_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Machinegunner (RPK)";
+        
+        icon = "iconManMG";
+        textSingular = "$STR_A3_nameSound_veh_infantry_MG_s";
+        textPlural = "$STR_A3_nameSound_veh_infantry_MG_p";
+        nameSound = "veh_infantry_MG_s";
+        
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "UK3CB_TKM_B_U_04";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"UK3CB_RPK"};
+        respawnWeapons[] = {"UK3CB_RPK"};
+
+        magazines[] = {"rhs_75Rnd_762x39mm_89","rhs_75Rnd_762x39mm_89"};
+        respawnMagazines[] = {"rhs_75Rnd_762x39mm_89","rhs_75Rnd_762x39mm_89"};
+
+		ALiVE_orbatCreator_loadout[] = {
+			{{"UK3CB_RPK","","","",{"rhs_75Rnd_762x39mm_89",75},{},""},{},{},{"UK3CB_TKM_B_U_04",{{"ACE_fieldDressing",2},{"rhs_75Rnd_762x39mm_89",3,75}}},{},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"UK3CB_RPK","","","",{"rhs_75Rnd_762x39mm_89",75},{},""},{},{},{"UK3CB_TKM_I_U_03_C",{{"ACE_fieldDressing",2},{"rhs_75Rnd_762x39mm_89",3,75}}},{},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"UK3CB_RPK","","","",{"rhs_75Rnd_762x39mm_89",75},{},""},{},{},{"UK3CB_TKM_B_U_05_B",{{"ACE_fieldDressing",2},{"rhs_75Rnd_762x39mm_89",3,75}}},{},{},"UK3CB_ADE_O_H_Turban_01_2","",{},{"","","","","",""}},
+			{{"UK3CB_RPK","","","",{"rhs_75Rnd_762x39mm_89",75},{},""},{},{},{"UK3CB_ADE_O_U_01_F",{{"ACE_fieldDressing",2},{"rhs_75Rnd_762x39mm_89",3,75}}},{},{},"UK3CB_H_Turban_Facewrap_02_Whi","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Machinegunner_RPK_01 : O_TakistaniMilitia_Machinegunner_RPK_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Machinegunner_RPK_01 : O_TakistaniMilitia_Machinegunner_RPK_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
 
     class O_TakistaniMilitia_Machinegunner_PKM_01 : TBan_Recruit2_OCimport_02 {
         editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Machinegunner_PKM_01.jpg";
@@ -761,6 +874,64 @@ class CfgVehicles {
         faction = "IND_Takistani_Militia";
     };
 
+	class O_TakistaniMilitia_Machinegunner_Bren_01 : TBan_Recruit2_OCimport_02 {
+        editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_Machinegunner_PKM_01.jpg";
+        author = "Landric";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Machinegunner (Bren Gun)";
+        
+        icon = "iconManMG";
+        textSingular = "$STR_A3_nameSound_veh_infantry_MG_s";
+        textPlural = "$STR_A3_nameSound_veh_infantry_MG_p";
+        nameSound = "veh_infantry_MG_s";
+        
+        side = 0;
+        faction = "OPF_Takistani_Militia";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_GUERIL_default","NoGlasses"};
+
+        uniformClass = "UK3CB_TKM_B_U_04";
+
+        linkedItems[] = {};
+        respawnlinkedItems[] = {};
+
+        weapons[] = {"UK3CB_Bren"};
+        respawnWeapons[] = {"UK3CB_Bren"};
+
+        magazines[] = {"UK3CB_Bren_30Rnd_762x51_Magazine","UK3CB_Bren_30Rnd_762x51_Magazine"};
+        respawnMagazines[] = {"UK3CB_Bren_30Rnd_762x51_Magazine","UK3CB_Bren_30Rnd_762x51_Magazine"};
+
+		ALiVE_orbatCreator_loadout[] = {
+			{{"UK3CB_Bren","","","",{"UK3CB_Bren_30Rnd_762x51_Magazine",30},{},""},{},{},{"UK3CB_TKM_B_U_04",{{"ACE_fieldDressing",2},{"UK3CB_Bren_30Rnd_762x51_Magazine",6,30}}},{},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"UK3CB_Bren","","","",{"UK3CB_Bren_30Rnd_762x51_Magazine",30},{},""},{},{},{"UK3CB_TKM_I_U_03_C",{{"ACE_fieldDressing",2},{"UK3CB_Bren_30Rnd_762x51_Magazine",6,30}}},{},{},"Afghan_03Hat","",{},{"","","","","",""}},
+			{{"UK3CB_Bren","","","",{"UK3CB_Bren_30Rnd_762x51_Magazine",30},{},""},{},{},{"UK3CB_TKM_B_U_05_B",{{"ACE_fieldDressing",2},{"UK3CB_Bren_30Rnd_762x51_Magazine",6,30}}},{},{},"UK3CB_ADE_O_H_Turban_01_2","",{},{"","","","","",""}},
+			{{"UK3CB_Bren","","","",{"UK3CB_Bren_30Rnd_762x51_Magazine",30},{},""},{},{},{"UK3CB_ADE_O_U_01_F",{{"ACE_fieldDressing",2},{"UK3CB_Bren_30Rnd_762x51_Magazine",6,30}}},{},{},"UK3CB_H_Turban_Facewrap_02_Whi","",{},{"","","","","",""}},
+		};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_TakistaniMilitia_Machinegunner_Bren_01 : O_TakistaniMilitia_Machinegunner_Bren_01 {
+        side = 1;
+        faction = "BLU_Takistani_Militia";
+    };
+
+    class I_TakistaniMilitia_Machinegunner_Bren_01 : O_TakistaniMilitia_Machinegunner_Bren_01 {
+        side = 2;
+        faction = "IND_Takistani_Militia";
+    };
 
     class O_TakistaniMilitia_AT_Specialist_RPG_01 : TBan_Recruit6NH_OCimport_02 {
         editorPreview = "\bf2_takistani_militia\data\preview\TakistaniMilitia_AT_Specialist_RPG_01.jpg";
