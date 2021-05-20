@@ -32,6 +32,7 @@ class CfgFunctions {
 		#include "sar\cfgFunctions.hpp"
 		#include "zeus\cfgFunctions.hpp"
 		#include "spectrum\cfgFunctions.hpp"
+		#include "forts\cfgFunctions.hpp"
 	};
 };
 class CfgVehicles{
