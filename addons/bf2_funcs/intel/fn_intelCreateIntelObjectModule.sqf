@@ -6,11 +6,12 @@ if (isServer && _activated) then {
 	_etext = _logic getVariable ["EntryText","(Found an intel item; no text supplied)"];
 	_escope = _logic getVariable ["Scope","unit"];
 	
+	[_logic,["bafops2_intel_entrytitle",_etitle]] remoteExec ["setVariable",0];
+	[_logic,["bafops2_intel_entrytext",_etext]] remoteExec ["setVariable",0];
+	[_logic,["bafops2_intel_scope",_escope]] remoteExec ["setVariable",0];
+	
 	{
-		[_x,["bafops2_intel_entrytitle",_etitle]] remoteExec ["setVariable",0];
-		[_x,["bafops2_intel_entrytext",_etext]] remoteExec ["setVariable",0];
-		[_x,["bafops2_intel_scope",_escope]] remoteExec ["setVariable",0];
-		[_x] remoteExec ["bafops2_fnc_intelCreateIntelObject",2];
+		[_x,_logic] call bafops2_fnc_intelCreateIntelObject;
 	} forEach _objects;
 	
 };
