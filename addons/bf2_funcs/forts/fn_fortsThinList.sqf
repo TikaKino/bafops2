@@ -1,6 +1,6 @@
 params["_fortType","_numberOfForts"];
 
-_logics = entities "Logic";
+/*_logics = entities "Logic";
 _list = [];
 
 {
@@ -9,7 +9,8 @@ _list = [];
 	
 	if((_fortData get "type") != _fortType) then {continue};
 	_list pushBack _fortData;
-} forEach _logics;
+} forEach _logics;*/
+_list = [_fortType] call bafops2_fnc_fortsGetByType;
 
 _rem = _numberOfForts;
 while { _rem > 0 } do {

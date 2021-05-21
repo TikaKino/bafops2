@@ -6,4 +6,5 @@ class forts {
 	class fortsThinList {};
 	class fortsGetFort {};
 	class fortsIsClear {};
+	class fortsGetByType {};
 };
