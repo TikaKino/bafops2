@@ -11,7 +11,9 @@ class CfgPatches {
 			"bafops2_ModuleSarTerminalMarkerSetter",
 			"bafops2_ModuleSarTerminalScreenSetter",
 			"bafops2_ModuleAIPathDisable",
-			"bafops2_ModuleMessageTerminal"
+			"bafops2_ModuleMessageTerminal",
+			"bafops2_ModuleFortsFort",
+			"bafops2_ModuleFortsFortArea"
 		};
 		weapons[] = {};
 		requiredAddons[] = {};
@@ -33,6 +35,14 @@ class CfgFunctions {
 		#include "zeus\cfgFunctions.hpp"
 		#include "spectrum\cfgFunctions.hpp"
 		#include "forts\cfgFunctions.hpp"
+	};
+};
+class CfgFactionClasses
+{
+	class NO_CATEGORY;
+	class TIKA_BF2_FortsModules: NO_CATEGORY
+	{
+		displayName = "BAFOPS2 Random Forts";
 	};
 };
 class CfgVehicles{
@@ -58,6 +68,7 @@ class CfgVehicles{
 	#include "intel\cfgModules.hpp"
 	#include "sar\cfgModules.hpp"
 	#include "mission\cfgModules.hpp"
+	#include "forts\cfgModules.hpp"
 };
 class CfgWeapons{
 	#include "spectrum\cfgWeapons.hpp"

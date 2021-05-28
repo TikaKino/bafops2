@@ -7,4 +7,7 @@ class forts {
 	class fortsGetFort {};
 	class fortsIsClear {};
 	class fortsGetByType {};
+	
+	class fortsFortAreaModule {};
+	class fortsCreateFortModule {};
 };
