@@ -10,4 +10,4 @@ _fortMap set ["logic",_logic];
 _fortMap set ["name",_fortName];
 _fortMap set ["score",_fortScore];
 
-_fortLogic setVariable ["bafops2_forts_fortdata",_fortMap];
+_logic setVariable ["bafops2_forts_fortdata",_fortMap];
