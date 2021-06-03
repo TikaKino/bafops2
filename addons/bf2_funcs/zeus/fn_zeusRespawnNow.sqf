@@ -38,4 +38,4 @@ if (!hasInterface) exitWith {};
 		[_delay] remoteExec ["setPlayerRespawnTime",_target];
 	};
 	
-}] call Ares_fnc_RegisterCustomModule;
+}] call zen_custom_modules_fnc_register;

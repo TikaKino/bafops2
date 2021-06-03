@@ -7,7 +7,7 @@ if(!hasInterface) exitWith {};
 			[_x,false] remoteExec ["setCaptive", _x];
 		} forEach units group _target;
 	}
-}] call Ares_fnc_RegisterCustomModule;
+}] call zen_custom_modules_fnc_register;
 
 ["Players", "Group Captive On",{
 	params [["_position", [0,0,0], [[]], 3], ["_target", objNull, [objNull]]];
@@ -16,4 +16,4 @@ if(!hasInterface) exitWith {};
 			[_x,true] remoteExec ["setCaptive", _x];
 		} forEach units group _target;
 	}
-}] call Ares_fnc_RegisterCustomModule;
+}] call zen_custom_modules_fnc_register;
