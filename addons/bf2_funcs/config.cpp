@@ -22,9 +22,9 @@ class CfgPatches {
 		author = "Mikael";
         authors[] = {"Mikael"};
 		requiredVersion = 2.00; 
-		version=1.3.3;
-		versionStr="1.3.3.0";
-		versionAr[]={1,3,3,0};
+		version=1.3.4.1;
+		versionStr="1.3.4.1";
+		versionAr[]={1,3,4,1};
 	};
 };
 class CfgFunctions {
