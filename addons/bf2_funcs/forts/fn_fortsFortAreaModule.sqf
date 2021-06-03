@@ -15,15 +15,15 @@ _forts = [];
 
 _target = _logic getVariable ["NumberOfForts",1];
 if(_target < 0) then { _target = (count _forts) - _target; };
-if(_target < 0) then { _target = 1; };
+if(_target < 0) then { _target = 0; };
 
 _rem = _target;
 while { _rem > 0 } do {
-	_index = floor random count _list;
-	_list deleteAt _index;
+	_index = floor random count _forts;
+	_forts deleteAt _index;
 	_rem = _rem - 1;
 };
 
 {
 	[_x] call bafops2_fnc_fortsDeleteFort;
-} forEach _list;
+} forEach _forts;
