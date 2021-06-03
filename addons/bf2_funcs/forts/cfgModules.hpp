@@ -23,6 +23,26 @@ class bafops2_ModuleFortsFort: Module_F {
 	// Module attributes, uses https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Attributes#Entity_Specific
 	class Attributes: AttributesBase
 	{	
+		// Module specific arguments
+		class FortName: Edit
+		{
+			// Unique property, use "<moduleClass>_<attributeClass>" format to make sure the name is unique in the world
+			property = "bafops2_ModuleFortsFort_name";
+			displayName = "Name"; // Argument label
+			tooltip = "A short descriptive name for this fort, to turn up in scoring etc."; // Tooltip description
+			typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
+			defaultValue = """"""; // Default attribute value. WARNING: This is an expression, and its returned value will be used
+		};
+		class FortScore: Edit
+		{
+			// Unique property, use "<moduleClass>_<attributeClass>" format to make sure the name is unique in the world
+			property = "bafops2_ModuleFortsFort_score";
+			displayName = "Score"; // Argument label
+			tooltip = "Points received for clearing this fort in a scored scenario."; // Tooltip description
+			typeName = "NUMBER"; // Value type, can be "NUMBER", "STRING" or "BOOL"
+			defaultValue = "50"; // Default attribute value. WARNING: This is an expression, and its returned value will be used
+		};
+		
 		class ModuleDescription: ModuleDescription{}; // Module description should be shown last
 	};
 
@@ -70,12 +90,11 @@ class bafops2_ModuleFortsFortArea: Module_F {
 	
 	// Module attributes, uses https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Attributes#Entity_Specific
 	class Attributes: AttributesBase
-	{
-		// Module specific arguments
+	{	
 		class NumberOfForts: Edit
 		{
 			// Unique property, use "<moduleClass>_<attributeClass>" format to make sure the name is unique in the world
-			property = "bafops2_ModuleFortsFort_numberOfForts";
+			property = "bafops2_ModuleFortArea_numberOfForts";
 			displayName = "Number of Forts"; // Argument label
 			tooltip = "How many of the synced fort objects will remain. Use a negative number to remove that many instead."; // Tooltip description
 			typeName = "NUMBER"; // Value type, can be "NUMBER", "STRING" or "BOOL"
