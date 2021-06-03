@@ -8,7 +8,7 @@ _forts = [];
 
 {
 	_fortData = [_x] call bafops2_fnc_fortsGetFort;
-	if(_fortDataSource isEqualTo false) then { continue; };
+	if(_fortData isEqualTo false) then { continue; };
 	_forts pushBack _fortData;
 	
 } forEach _attLogics;
