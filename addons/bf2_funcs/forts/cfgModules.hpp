@@ -3,7 +3,7 @@ class bafops2_ModuleFortsFort: Module_F {
 	// Standard object definitions
 	scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 1;
-	displayName = "BAFOPS2 Fort"; // Name displayed in the menu
+	displayName = "Fort"; // Name displayed in the menu
 	//icon = "\myTag_addonName\data\iconNuke_ca.paa"; // Map icon. Delete this entry to use the default icon
 	category = "TIKA_BF2_FortsModules";
 	
@@ -71,7 +71,7 @@ class bafops2_ModuleFortsFortArea: Module_F {
 	// Standard object definitions
 	scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 1;
-	displayName = "BAFOPS2 Fort Area"; // Name displayed in the menu
+	displayName = "Fort Area"; // Name displayed in the menu
 	//icon = "\myTag_addonName\data\iconNuke_ca.paa"; // Map icon. Delete this entry to use the default icon
 	category = "TIKA_BF2_FortsModules";
 	
