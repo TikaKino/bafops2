@@ -1124,14 +1124,17 @@ class CfgVehicles {
         magazines[] = {"rhsgref_5Rnd_762x54_m38","rhsgref_5Rnd_762x54_m38"};
         respawnMagazines[] = {"rhsgref_5Rnd_762x54_m38","rhsgref_5Rnd_762x54_m38"};
 
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m38_rail","","","optic_KHS_old",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"U_Afghan03NH",{{"ACE_fieldDressing",4},{"ACE_10Rnd_762x51_M118LR_Mag",3,10}}},{},{},"","",{},{"","","","","",""}};
-
+		ALiVE_orbatCreator_loadout[] = {
+			{{"rhs_weap_m38_rail","","","optic_KHS_old",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"UK3CB_TKM_B_U_03",{{"ACE_fieldDressing",2},{"rhsgref_5Rnd_762x54_m38",8,5}}},{},{},"Afghan_05Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m38_rail","","","optic_KHS_old",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"UK3CB_TKM_B_U_04",{{"ACE_fieldDressing",2},{"rhsgref_5Rnd_762x54_m38",8,5}}},{},{},"Afghan_01Hat","",{},{"","","","","",""}},
+			{{"rhs_weap_m38_rail","","","optic_KHS_old",{"rhsgref_5Rnd_762x54_m38",5},{},""},{},{},{"UK3CB_TKM_B_U_05_B",{{"ACE_fieldDressing",2},{"rhsgref_5Rnd_762x54_m38",8,5}}},{},{},"Afghan_03Hat","",{},{"","","","","",""}},
+		};
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _loadout = selectRandom _loadout; _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
