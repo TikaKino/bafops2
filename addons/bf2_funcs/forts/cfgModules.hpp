@@ -131,7 +131,7 @@ class bafops2_ModuleFortsFortArea: Module_F {
 	};
 };
 
-class bafops2_ModuleFortsFortArea: Module_F {
+class bafops2_ModuleFortsPersistRemoval: Module_F {
 	// Standard object definitions
 	scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 1;

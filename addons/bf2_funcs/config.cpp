@@ -13,7 +13,8 @@ class CfgPatches {
 			"bafops2_ModuleAIPathDisable",
 			"bafops2_ModuleMessageTerminal",
 			"bafops2_ModuleFortsFort",
-			"bafops2_ModuleFortsFortArea"
+			"bafops2_ModuleFortsFortArea",
+			"bafops2_ModuleFortsPersistRemoval"
 		};
 		weapons[] = {};
 		requiredAddons[] = {};
