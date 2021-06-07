@@ -107,7 +107,7 @@ class CfgPatches {
             "I_TakistaniMilitia_BTR70_01"
         };
         weapons[] = {};
-        requiredVersion = 1.62;
+        requiredVersion = 2.00;
         requiredAddons[] = {
             "A3_Characters_F",
             "Taliban_Fighters",
@@ -121,8 +121,8 @@ class CfgPatches {
         };
         author = "Landric";
         authors[] = {"Landric","TikaKino"};
-		version=1.3.1;
-		versionStr="1.3.1.0";
-		versionAr[]={1,3,1,0};
+		version=1.3.5;
+		versionStr="1.3.5.0";
+		versionAr[]={1,3,5,0};
     };
 };
