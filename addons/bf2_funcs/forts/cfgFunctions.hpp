@@ -10,4 +10,5 @@ class forts {
 	
 	class fortsFortAreaModule {};
 	class fortsCreateFortModule {};
+	class fortsFortPersistModule {};
 };
